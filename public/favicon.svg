@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="8" fill="#1B5E2A"/>
+  <!-- Seedling sprout -->
+  <line x1="16" y1="26" x2="16" y2="12" stroke="#C8973A" stroke-width="2" stroke-linecap="round"/>
+  <path d="M16 18 Q10 14 10 8 Q16 10 16 18Z" fill="#4CAF64"/>
+  <path d="M16 15 Q22 11 22 5 Q16 8 16 15Z" fill="#2E7D3E"/>
+</svg>

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  /* BINHI — earth, leaf, grain, sky */
+  --soil:        #3B2A1A;
+  --soil-light:  #F5EFE6;
+
+  --leaf:        #2E7D3E;
+  --leaf-light:  #E8F5EC;
+  --leaf-mid:    #4CAF64;
+  --leaf-dark:   #1B5E2A;
+
+  --grain:       #C8973A;
+  --grain-light: #FDF3E3;
+  --grain-dark:  #9A6E1E;
+
+  --sky:         #1A6FA8;
+  --sky-light:   #E6F2FB;
+
+  --ink:         #1C1A14;
+  --ink-muted:   #5A5446;
+  --ink-faint:   #A09880;
+
+  --paper:       #FAFAF6;
+  --paper-dark:  #F0EDE4;
+  --border:      #DDD6C8;
+
+  --success:     #1E8A4C;
+  --success-light: #E6F5ED;
+  --error:       #C0392B;
+  --error-light: #FDE8E6;
+
+  --radius:    10px;
+  --radius-sm: 6px;
+  --shadow:    0 2px 12px rgba(59,42,26,0.08);
+  --shadow-lg: 0 8px 32px rgba(59,42,26,0.14);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+h1, h2, h3 {
+  font-family: 'Lora', Georgia, serif;
+  line-height: 1.25;
+}
+
+a { color: var(--leaf); text-decoration: none; }
+a:hover { color: var(--leaf-dark); }
+
+button { cursor: pointer; font-family: inherit; }
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--paper-dark); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; }
+  .print-area { padding: 0; margin: 0; }
+}
